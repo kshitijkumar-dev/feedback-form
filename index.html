@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FeedStack</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="logo.png" class="logo">
+
+<h2>Student Feedback Form</h2>
+
+<form id="feedbackForm">
+
+<label>Name (Optional)</label>
+<input type="text" id="name">
+
+<label>Board</label>
+<select id="board" required>
+<option value="">Select</option>
+<option>ICSE</option>
+<option>CBSE</option>
+</select>
+
+<label>Class</label>
+<select id="class" required>
+<option value="">Select</option>
+<option>VI</option>
+<option>VII</option>
+<option>VIII</option>
+<option>IX</option>
+<option>X</option>
+<option>XI</option>
+<option>XII</option>
+</select>
+
+<h3>Subject Ratings</h3>
+
+<label>Maths</label>
+<div class="rating">
+<input type="radio" name="maths" value="1" required>1
+<input type="radio" name="maths" value="2">2
+<input type="radio" name="maths" value="3">3
+<input type="radio" name="maths" value="4">4
+<input type="radio" name="maths" value="5">5
+</div>
+
+<label>Science</label>
+<div class="rating">
+<input type="radio" name="science" value="1" required>1
+<input type="radio" name="science" value="2">2
+<input type="radio" name="science" value="3">3
+<input type="radio" name="science" value="4">4
+<input type="radio" name="science" value="5">5
+</div>
+
+<label>SST</label>
+<div class="rating">
+<input type="radio" name="sst" value="1" required>1
+<input type="radio" name="sst" value="2">2
+<input type="radio" name="sst" value="3">3
+<input type="radio" name="sst" value="4">4
+<input type="radio" name="sst" value="5">5
+</div>
+
+<label>English</label>
+<div class="rating">
+<input type="radio" name="english" value="1" required>1
+<input type="radio" name="english" value="2">2
+<input type="radio" name="english" value="3">3
+<input type="radio" name="english" value="4">4
+<input type="radio" name="english" value="5">5
+</div>
+
+<h3>Teacher Feedback</h3>
+
+<div class="teacherBlock">
+<h4>Nilesh Sir</h4>
+<label>Clarity</label><input type="number" id="nilesh_clarity" min="1" max="5">
+<label>Doubt Solving</label><input type="number" id="nilesh_doubt" min="1" max="5">
+<label>Engagement</label><input type="number" id="nilesh_engage" min="1" max="5">
+<textarea id="nilesh_remark" placeholder="Remarks"></textarea>
+</div>
+
+<div class="teacherBlock">
+<h4>Vikas Sir</h4>
+<label>Clarity</label><input type="number" id="vikas_clarity" min="1" max="5">
+<label>Doubt Solving</label><input type="number" id="vikas_doubt" min="1" max="5">
+<label>Engagement</label><input type="number" id="vikas_engage" min="1" max="5">
+<textarea id="vikas_remark" placeholder="Remarks"></textarea>
+</div>
+
+<div class="teacherBlock">
+<h4>Avanya Ma'am</h4>
+<label>Clarity</label><input type="number" id="avanya_clarity" min="1" max="5">
+<label>Doubt Solving</label><input type="number" id="avanya_doubt" min="1" max="5">
+<label>Engagement</label><input type="number" id="avanya_engage" min="1" max="5">
+<textarea id="avanya_remark" placeholder="Remarks"></textarea>
+</div>
+
+<div class="teacherBlock">
+<h4>Amit Sir</h4>
+<label>Clarity</label><input type="number" id="amit_clarity" min="1" max="5">
+<label>Doubt Solving</label><input type="number" id="amit_doubt" min="1" max="5">
+<label>Engagement</label><input type="number" id="amit_engage" min="1" max="5">
+<textarea id="amit_remark" placeholder="Remarks"></textarea>
+</div>
+
+<div class="teacherBlock">
+<h4>Amar Sir</h4>
+<label>Clarity</label><input type="number" id="amar_clarity" min="1" max="5">
+<label>Doubt Solving</label><input type="number" id="amar_doubt" min="1" max="5">
+<label>Engagement</label><input type="number" id="amar_engage" min="1" max="5">
+<textarea id="amar_remark" placeholder="Remarks"></textarea>
+</div>
+
+<h3>Study Environment</h3>
+
+<label>Discipline</label>
+<input type="number" id="discipline" min="1" max="5" required>
+
+<label>Pace</label>
+<input type="number" id="pace" min="1" max="5" required>
+
+<label>Revision Support</label>
+<input type="number" id="revision" min="1" max="5" required>
+
+<textarea id="environmentComment" placeholder="Environment Remarks"></textarea>
+
+<h3>Overall Satisfaction</h3>
+
+<input type="number" id="overall" min="1" max="5" required>
+
+<textarea id="overallComment" placeholder="Overall Suggestions"></textarea>
+
+<button type="submit">Submit Feedback</button>
+
+</form>
+
+</div>
+
+<p class="credit">
+Built by <a href="https://github.com/kshitijkumar-dev" target="_blank">Kshitij Kumar</a>
+</p>
+
+<script src="script.js"></script>
+</body>
+</html>
