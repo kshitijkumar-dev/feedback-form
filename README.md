@@ -1,4 +1,4 @@
-## 📚 FeedStack-lite – Institution Feedback Management System
+## 📚 FeedStack-lite 
 FeedStack-Lite is a lighter version of FeedStack (which used Firebase as backend).
 This version uses Google Sheets for storing data.
 
