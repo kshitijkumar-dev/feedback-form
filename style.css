@@ -1,26 +1,52 @@
 body{
-font-family: Arial, sans-serif;
-background:#f4f4f4;
+font-family: system-ui, sans-serif;
+background:#f5f6fa;
+margin:0;
+padding:0;
 }
 
 .container{
-max-width:500px;
+max-width:520px;
 margin:auto;
-background:#fff;
 padding:20px;
-border-radius:10px;
+background:white;
+min-height:100vh;
 }
 
 .logo{
 width:120px;
 display:block;
-margin:auto;
+margin:10px auto;
 }
 
-input, select, textarea, button{
+h2,h3,h4{
+text-align:center;
+color:#222;
+}
+
+label,p{
+font-size:14px;
+margin-top:12px;
+}
+
+input,select,textarea{
 width:100%;
 padding:8px;
-margin:6px 0;
+margin-top:6px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:14px;
+}
+
+textarea{
+min-height:60px;
+resize:vertical;
+}
+
+.rating{
+display:flex;
+gap:12px;
+margin:8px 0;
 }
 
 .rating input{
@@ -28,24 +54,36 @@ width:auto;
 }
 
 .teacherBlock{
-border:1px solid #ccc;
-padding:10px;
-margin-top:10px;
-border-radius:8px;
 background:#fafafa;
+padding:12px;
+border-radius:8px;
+margin-top:14px;
+}
+
+hr{
+border:none;
+border-top:1px solid #ddd;
+margin:20px 0;
 }
 
 button{
-background:black;
+width:100%;
+padding:12px;
+background:#4f46e5;
 color:white;
 border:none;
-padding:10px;
+border-radius:8px;
 font-size:16px;
-cursor:pointer;
+margin-top:20px;
+}
+
+button:hover{
+background:#4338ca;
 }
 
 .credit{
 text-align:center;
+font-size:12px;
 margin-top:20px;
-font-size:14px;
+color:#555;
 }
