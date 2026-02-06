@@ -17,18 +17,19 @@
 
 <form id="feedbackForm">
 
+<!-- BASIC INFO -->
 <label>Name (Optional)</label>
-<input type="text" id="name">
+<input type="text" name="name">
 
 <label>Board</label>
-<select id="board" required>
+<select name="board" required>
 <option value="">Select</option>
 <option>ICSE</option>
 <option>CBSE</option>
 </select>
 
 <label>Class</label>
-<select id="class" required>
+<select name="studentClass" required>
 <option value="">Select</option>
 <option>VI</option>
 <option>VII</option>
@@ -39,9 +40,12 @@
 <option>XII</option>
 </select>
 
+<hr>
+
+<!-- SUBJECT RATINGS -->
 <h3>Subject Ratings</h3>
 
-<label>Maths</label>
+<p>Maths</p>
 <div class="rating">
 <input type="radio" name="maths" value="1" required>1
 <input type="radio" name="maths" value="2">2
@@ -50,7 +54,7 @@
 <input type="radio" name="maths" value="5">5
 </div>
 
-<label>Science</label>
+<p>Science</p>
 <div class="rating">
 <input type="radio" name="science" value="1" required>1
 <input type="radio" name="science" value="2">2
@@ -59,7 +63,7 @@
 <input type="radio" name="science" value="5">5
 </div>
 
-<label>SST</label>
+<p>SST</p>
 <div class="rating">
 <input type="radio" name="sst" value="1" required>1
 <input type="radio" name="sst" value="2">2
@@ -68,7 +72,7 @@
 <input type="radio" name="sst" value="5">5
 </div>
 
-<label>English</label>
+<p>English</p>
 <div class="rating">
 <input type="radio" name="english" value="1" required>1
 <input type="radio" name="english" value="2">2
@@ -77,76 +81,240 @@
 <input type="radio" name="english" value="5">5
 </div>
 
+<hr>
+
+<!-- TEACHERS -->
 <h3>Teacher Feedback</h3>
 
+<!-- ===== NILESH ===== -->
 <div class="teacherBlock">
 <h4>Nilesh Sir</h4>
-<label>Clarity</label><input type="number" id="nilesh_clarity" min="1" max="5">
-<label>Doubt Solving</label><input type="number" id="nilesh_doubt" min="1" max="5">
-<label>Engagement</label><input type="number" id="nilesh_engage" min="1" max="5">
-<textarea id="nilesh_remark" placeholder="Remarks"></textarea>
+
+<p>Clarity</p>
+<div class="rating">
+<input type="radio" name="nilesh_clarity" value="1">1
+<input type="radio" name="nilesh_clarity" value="2">2
+<input type="radio" name="nilesh_clarity" value="3">3
+<input type="radio" name="nilesh_clarity" value="4">4
+<input type="radio" name="nilesh_clarity" value="5">5
 </div>
 
+<p>Doubt Solving</p>
+<div class="rating">
+<input type="radio" name="nilesh_doubt" value="1">1
+<input type="radio" name="nilesh_doubt" value="2">2
+<input type="radio" name="nilesh_doubt" value="3">3
+<input type="radio" name="nilesh_doubt" value="4">4
+<input type="radio" name="nilesh_doubt" value="5">5
+</div>
+
+<p>Engagement</p>
+<div class="rating">
+<input type="radio" name="nilesh_engage" value="1">1
+<input type="radio" name="nilesh_engage" value="2">2
+<input type="radio" name="nilesh_engage" value="3">3
+<input type="radio" name="nilesh_engage" value="4">4
+<input type="radio" name="nilesh_engage" value="5">5
+</div>
+
+<textarea name="nilesh_remark" placeholder="Remarks (optional)"></textarea>
+</div>
+
+<!-- ===== VIKAS ===== -->
 <div class="teacherBlock">
 <h4>Vikas Sir</h4>
-<label>Clarity</label><input type="number" id="vikas_clarity" min="1" max="5">
-<label>Doubt Solving</label><input type="number" id="vikas_doubt" min="1" max="5">
-<label>Engagement</label><input type="number" id="vikas_engage" min="1" max="5">
-<textarea id="vikas_remark" placeholder="Remarks"></textarea>
+
+<p>Clarity</p>
+<div class="rating">
+<input type="radio" name="vikas_clarity" value="1">1
+<input type="radio" name="vikas_clarity" value="2">2
+<input type="radio" name="vikas_clarity" value="3">3
+<input type="radio" name="vikas_clarity" value="4">4
+<input type="radio" name="vikas_clarity" value="5">5
 </div>
 
+<p>Doubt Solving</p>
+<div class="rating">
+<input type="radio" name="vikas_doubt" value="1">1
+<input type="radio" name="vikas_doubt" value="2">2
+<input type="radio" name="vikas_doubt" value="3">3
+<input type="radio" name="vikas_doubt" value="4">4
+<input type="radio" name="vikas_doubt" value="5">5
+</div>
+
+<p>Engagement</p>
+<div class="rating">
+<input type="radio" name="vikas_engage" value="1">1
+<input type="radio" name="vikas_engage" value="2">2
+<input type="radio" name="vikas_engage" value="3">3
+<input type="radio" name="vikas_engage" value="4">4
+<input type="radio" name="vikas_engage" value="5">5
+</div>
+
+<textarea name="vikas_remark" placeholder="Remarks (optional)"></textarea>
+</div>
+
+<!-- ===== AVANYA ===== -->
 <div class="teacherBlock">
 <h4>Avanya Ma'am</h4>
-<label>Clarity</label><input type="number" id="avanya_clarity" min="1" max="5">
-<label>Doubt Solving</label><input type="number" id="avanya_doubt" min="1" max="5">
-<label>Engagement</label><input type="number" id="avanya_engage" min="1" max="5">
-<textarea id="avanya_remark" placeholder="Remarks"></textarea>
+
+<p>Clarity</p>
+<div class="rating">
+<input type="radio" name="avanya_clarity" value="1">1
+<input type="radio" name="avanya_clarity" value="2">2
+<input type="radio" name="avanya_clarity" value="3">3
+<input type="radio" name="avanya_clarity" value="4">4
+<input type="radio" name="avanya_clarity" value="5">5
 </div>
 
+<p>Doubt Solving</p>
+<div class="rating">
+<input type="radio" name="avanya_doubt" value="1">1
+<input type="radio" name="avanya_doubt" value="2">2
+<input type="radio" name="avanya_doubt" value="3">3
+<input type="radio" name="avanya_doubt" value="4">4
+<input type="radio" name="avanya_doubt" value="5">5
+</div>
+
+<p>Engagement</p>
+<div class="rating">
+<input type="radio" name="avanya_engage" value="1">1
+<input type="radio" name="avanya_engage" value="2">2
+<input type="radio" name="avanya_engage" value="3">3
+<input type="radio" name="avanya_engage" value="4">4
+<input type="radio" name="avanya_engage" value="5">5
+</div>
+
+<textarea name="avanya_remark" placeholder="Remarks (optional)"></textarea>
+</div>
+
+<!-- ===== AMIT ===== -->
 <div class="teacherBlock">
 <h4>Amit Sir</h4>
-<label>Clarity</label><input type="number" id="amit_clarity" min="1" max="5">
-<label>Doubt Solving</label><input type="number" id="amit_doubt" min="1" max="5">
-<label>Engagement</label><input type="number" id="amit_engage" min="1" max="5">
-<textarea id="amit_remark" placeholder="Remarks"></textarea>
+
+<p>Clarity</p>
+<div class="rating">
+<input type="radio" name="amit_clarity" value="1">1
+<input type="radio" name="amit_clarity" value="2">2
+<input type="radio" name="amit_clarity" value="3">3
+<input type="radio" name="amit_clarity" value="4">4
+<input type="radio" name="amit_clarity" value="5">5
 </div>
 
+<p>Doubt Solving</p>
+<div class="rating">
+<input type="radio" name="amit_doubt" value="1">1
+<input type="radio" name="amit_doubt" value="2">2
+<input type="radio" name="amit_doubt" value="3">3
+<input type="radio" name="amit_doubt" value="4">4
+<input type="radio" name="amit_doubt" value="5">5
+</div>
+
+<p>Engagement</p>
+<div class="rating">
+<input type="radio" name="amit_engage" value="1">1
+<input type="radio" name="amit_engage" value="2">2
+<input type="radio" name="amit_engage" value="3">3
+<input type="radio" name="amit_engage" value="4">4
+<input type="radio" name="amit_engage" value="5">5
+</div>
+
+<textarea name="amit_remark" placeholder="Remarks (optional)"></textarea>
+</div>
+
+<!-- ===== AMAR ===== -->
 <div class="teacherBlock">
 <h4>Amar Sir</h4>
-<label>Clarity</label><input type="number" id="amar_clarity" min="1" max="5">
-<label>Doubt Solving</label><input type="number" id="amar_doubt" min="1" max="5">
-<label>Engagement</label><input type="number" id="amar_engage" min="1" max="5">
-<textarea id="amar_remark" placeholder="Remarks"></textarea>
+
+<p>Clarity</p>
+<div class="rating">
+<input type="radio" name="amar_clarity" value="1">1
+<input type="radio" name="amar_clarity" value="2">2
+<input type="radio" name="amar_clarity" value="3">3
+<input type="radio" name="amar_clarity" value="4">4
+<input type="radio" name="amar_clarity" value="5">5
 </div>
 
+<p>Doubt Solving</p>
+<div class="rating">
+<input type="radio" name="amar_doubt" value="1">1
+<input type="radio" name="amar_doubt" value="2">2
+<input type="radio" name="amar_doubt" value="3">3
+<input type="radio" name="amar_doubt" value="4">4
+<input type="radio" name="amar_doubt" value="5">5
+</div>
+
+<p>Engagement</p>
+<div class="rating">
+<input type="radio" name="amar_engage" value="1">1
+<input type="radio" name="amar_engage" value="2">2
+<input type="radio" name="amar_engage" value="3">3
+<input type="radio" name="amar_engage" value="4">4
+<input type="radio" name="amar_engage" value="5">5
+</div>
+
+<textarea name="amar_remark" placeholder="Remarks (optional)"></textarea>
+</div>
+
+<hr>
+
+
+<!-- STUDY ENVIRONMENT -->
 <h3>Study Environment</h3>
 
-<label>Discipline</label>
-<input type="number" id="discipline" min="1" max="5" required>
+<p>Discipline</p>
+<div class="rating">
+<input type="radio" name="discipline" value="1" required>1
+<input type="radio" name="discipline" value="2">2
+<input type="radio" name="discipline" value="3">3
+<input type="radio" name="discipline" value="4">4
+<input type="radio" name="discipline" value="5">5
+</div>
 
-<label>Pace</label>
-<input type="number" id="pace" min="1" max="5" required>
+<p>Teaching Pace</p>
+<div class="rating">
+<input type="radio" name="pace" value="1" required>1
+<input type="radio" name="pace" value="2">2
+<input type="radio" name="pace" value="3">3
+<input type="radio" name="pace" value="4">4
+<input type="radio" name="pace" value="5">5
+</div>
 
-<label>Revision Support</label>
-<input type="number" id="revision" min="1" max="5" required>
+<p>Revision Support</p>
+<div class="rating">
+<input type="radio" name="revision" value="1" required>1
+<input type="radio" name="revision" value="2">2
+<input type="radio" name="revision" value="3">3
+<input type="radio" name="revision" value="4">4
+<input type="radio" name="revision" value="5">5
+</div>
 
-<textarea id="environmentComment" placeholder="Environment Remarks"></textarea>
+<textarea name="environmentRemark" placeholder="Environment remarks"></textarea>
 
+<hr>
+
+<!-- OVERALL -->
 <h3>Overall Satisfaction</h3>
 
-<input type="number" id="overall" min="1" max="5" required>
+<div class="rating">
+<input type="radio" name="overall" value="1" required>😡
+<input type="radio" name="overall" value="2">😕
+<input type="radio" name="overall" value="3">😐
+<input type="radio" name="overall" value="4">🙂
+<input type="radio" name="overall" value="5">🔥
+</div>
 
-<textarea id="overallComment" placeholder="Overall Suggestions"></textarea>
+<textarea name="overallRemark" placeholder="Final suggestion"></textarea>
 
 <button type="submit">Submit Feedback</button>
 
 </form>
 
-</div>
-
 <p class="credit">
 Built by <a href="https://github.com/kshitijkumar-dev" target="_blank">Kshitij Kumar</a>
 </p>
+
+</div>
 
 <script src="script.js"></script>
 </body>
